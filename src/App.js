@@ -32,7 +32,7 @@ function App() {
       <div className="line" />
       <FriendList friends={friends} />
       <div className="line" />
-      {/*<TransactionHistory transactions={transactions} >*/}
+      <TransactionHistory transactions={transactions} />
     </main>
   );
 }
