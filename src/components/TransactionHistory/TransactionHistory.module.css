@@ -1,0 +1,31 @@
+.table {
+  box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3), -1px -1px 2px rgb(0, 0, 0, 0.3);
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.table tr {
+  width: 10rem;
+  text-align: center;
+}
+
+.table td,
+.table th {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border: 1px solid darkgray;
+}
+
+.table tr > th:first-child,
+.table tr > td:first-child {
+  text-align: start;
+}
+
+.table > thead > tr {
+  background-color: lightskyblue;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.table > tbody > tr:nth-child(2n) {
+  background-color: lightgray;
+}
