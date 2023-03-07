@@ -1,0 +1,34 @@
+.statistics {
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px -2px black, -1px -1px 5px -2px black;
+  margin: 1rem 0;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: rgb(129, 129, 129);
+}
+.statList {
+  display: flex;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: white;
+  padding: 0.5rem;
+}
+.label {
+  font-size: 0.8rem;
+}
+.percentage {
+  font-size: 1.5rem;
+}
+.percentage::after {
+  content: "%";
+}
+
+.paragraph {
+}

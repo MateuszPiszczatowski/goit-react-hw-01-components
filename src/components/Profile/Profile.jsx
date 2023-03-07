@@ -6,17 +6,19 @@ const Profile = ({
   username,
   tag,
   location,
-  avatar = blankProfileImage,
+  avatar = "",
   stats = { followers: 0, views: 0, likes: 0 },
 }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
-        <img
-          src={avatar === "" ? blankProfileImage : avatar}
-          alt="User avatar"
-          className={css.avatar}
-        />
+        {avatar !== "" ? (
+          <img src={avatar} alt="User avatar" className={css.avatar} />
+        ) : (
+          <svg className={css.avatar}>
+            <use href={blankProfileImage} />
+          </svg>
+        )}
         <p className={css.name}>{username}</p>
         {tag && <p className={css.tag}>@{tag}</p>}
         {location && <p className={css.location}>{location}</p>}

@@ -14,9 +14,11 @@
   gap: 0.25rem;
 }
 .avatar {
+  display: block;
   width: 6rem;
   height: 6rem;
   border-radius: 100%;
+  fill: #555555;
 }
 .name {
   font-size: 1.25rem;
