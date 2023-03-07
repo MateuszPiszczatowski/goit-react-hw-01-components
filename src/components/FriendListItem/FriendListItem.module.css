@@ -1,18 +1,22 @@
 .item {
   display: flex;
-  align-items: top;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: start;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3), -1px -1px 2px rgb(0, 0, 0, 0.3);
+  width: 10rem;
+  padding: 0.5rem;
 }
 .status {
   display: inline-flex;
   align-items: center;
-  height: 48px;
 }
 .status::before {
   content: "";
   display: block;
   width: 10px;
   height: 10px;
-  border: 1px solid black;
   border-radius: 100%;
 }
 .statusActive {
@@ -25,5 +29,5 @@
   composes: status;
 }
 .statusInactive::before {
-  background-color: darkgray;
+  background-color: darkred;
 }
