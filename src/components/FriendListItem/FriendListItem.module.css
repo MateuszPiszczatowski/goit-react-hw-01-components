@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  align-items: top;
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+}
+.status::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.statusActive {
+  composes: status;
+}
+.statusActive::before {
+  background-color: green;
+}
+.statusInactive {
+  composes: status;
+}
+.statusInactive::before {
+  background-color: darkgray;
+}
