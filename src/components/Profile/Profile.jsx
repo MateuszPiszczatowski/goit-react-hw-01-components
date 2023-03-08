@@ -1,6 +1,6 @@
 import css from "./Profile.module.css";
 import PropTypes from "prop-types";
-import blankProfileImage from "../../images/blank.svg";
+import { ReactComponent as BlankProfileImage } from "../../images/blank.svg";
 
 const Profile = ({
   username,
@@ -15,9 +15,7 @@ const Profile = ({
         {avatar !== "" ? (
           <img src={avatar} alt="User avatar" className={css.avatar} />
         ) : (
-          <svg className={css.avatar}>
-            <use href={blankProfileImage} />
-          </svg>
+          <BlankProfileImage className={css.avatar} />
         )}
         <p className={css.name}>{username}</p>
         {tag && <p className={css.tag}>@{tag}</p>}
